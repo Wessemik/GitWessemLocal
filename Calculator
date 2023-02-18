@@ -33,4 +33,5 @@ public class Calculator_TiM {
                     System.out.printf(num1 + " " + op + " " + num2 + " = " + ans);
                 } else {System.out.println("Второе число должно быть от 0 до 10 включительно");}
             } else {System.out.println("Первое число должно быть от 0 до 10 включительно");}
-    }    }
+      }  
+    }
