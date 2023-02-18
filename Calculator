@@ -6,7 +6,7 @@ public class Calculator_TiM {
         int ans;
         char op;
         Scanner reader = new Scanner(System.in);
-        System.out.print("Введите пример для Калькулятора (например: 2 + 2 или 7 / 2) и нажмите 'ENTER': ");
+        System.out.print("Введите пример для Калькулятора (например: 2 + 2 или 10 / 5) и нажмите 'ENTER': ");
         num1 = reader.nextInt();
             if (num1 <=10 && num1 >=0) {
                 op = reader.next().charAt(0);
