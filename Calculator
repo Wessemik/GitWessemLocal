@@ -1,0 +1,36 @@
+import java.util.Scanner;
+public class Calculator_TiM {
+    public static void main(String[] args) {
+        int num1;
+        int num2;
+        int ans;
+        char op;
+        Scanner reader = new Scanner(System.in);
+        System.out.print("Введите пример для Калькулятора (например: 2 + 2 или 7 / 2) и нажмите 'ENTER': ");
+        num1 = reader.nextInt();
+            if (num1 <=10 && num1 >=0) {
+                op = reader.next().charAt(0);
+                num2 = reader.nextInt();
+                if (num2 <= 10 && num2 >= 0) {
+                        switch (op) {
+                        case '+':
+                            ans = num1 + num2;
+                            break;
+                        case '-':
+                            ans = num1 - num2;
+                            break;
+                        case '*':
+                            ans = num1 * num2;
+                            break;
+                        case '/':
+                            ans = num1 / num2;
+                            break;
+                        default:
+                            System.out.printf("Ошибка ввода операторв");
+                            return;
+                    }
+                    System.out.print("\nОтвет:\n");
+                    System.out.printf(num1 + " " + op + " " + num2 + " = " + ans);
+                } else {System.out.println("Второе число должно быть от 0 до 10 включительно");}
+            } else {System.out.println("Первое число должно быть от 0 до 10 включительно");}
+    }    }
