@@ -26,7 +26,7 @@ public class Calculator_TiM {
                             ans = num1 / num2;
                             break;
                         default:
-                            System.out.printf("Ошибка ввода");
+                            System.out.printf("Ошибка ввода оператора");
                             return;
                     }
                     System.out.print("\nОтвет:\n");
